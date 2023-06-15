@@ -18,9 +18,11 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
-        run: npm install
 
+      - name: Install dependencies
+        run: npm ci
+      - name: Install dependencies
+        run: npm install jest
       - name: Lint code
         run: npm run lint
 
